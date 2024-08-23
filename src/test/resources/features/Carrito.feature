@@ -8,7 +8,7 @@ Feature: Validar la funcionalidad del carrito de compras.
     Then valido el carrito de compra actualice correctamente
 
     Examples:
-      | PRODUCTO                 | unidades |
-      | Sauce Labs Backpack     | 1           |
-      | Sauce Labs Bolt - T-Shirt | 1                   |
-      | Sauce Labs Bike Light     | 2                   |
+      | PRODUCTO                  | unidades   |
+      | Sauce Labs Backpack       | 1          |
+      | Sauce Labs Bolt - T-Shirt | 1          |
+      | Sauce Labs Bike Light     | 2          |

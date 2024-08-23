@@ -12,10 +12,9 @@ import java.util.concurrent.TimeUnit;
 public class CarritoScreen extends PageObject {
 
 
-    @AndroidFindBy(xpath = "  //android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/productTV\"]")
+
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/productTV\"]")
     private WebElement lblTitulo;
-
-
 
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Sauce Labs Backpack\"]")
     private WebElement ImgProducto1;
@@ -65,10 +64,6 @@ public class CarritoScreen extends PageObject {
     public void AppSucces(){
         Assert.assertTrue(isProductEnable());
     }
-
-
-
-
     public void VerificarCompra(){
         WebDriverWait wait = new WebDriverWait(getDriver(), 20);
         wait.until(ExpectedConditions.elementToBeClickable(btnCarrito));
